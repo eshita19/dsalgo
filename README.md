@@ -20,3 +20,12 @@
    - Omega notation - minimum time taken by algo(Best case)
    - Big o notation - maximum time taken by algo(Worst case)
    - Theta notation - Average case
+   - Predefined complexities:
+      - O(1) - Constant - Adding an element in front of linked list.
+      - O(log n) - Logarithmic - Finding an element in sorted array.
+      - O(n) - linear - Finding an element in unsorted array.
+      - O(nlogn) - Linear logarithmic - Merge sort
+      - O(n2) - Quadratic - Shortest path between two nodes.
+      - O(n3) - Cubic - Matrix multiplication
+      - O(2n) - Exponential - Tower of hanoi
+      
