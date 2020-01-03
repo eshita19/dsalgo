@@ -12,3 +12,4 @@
       }
       
       ```
+   - Method calls are stored in memory stack(LIFO - last in first out) manner.   
