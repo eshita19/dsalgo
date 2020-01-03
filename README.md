@@ -14,3 +14,4 @@
       ```
    - Method calls are stored in memory stack(LIFO - last in first out) manner. 
    - Pros: Ease of code, Cons: Not space and time efficient(Use of Stack memory, push, pop operation and maintaining pointers).
+   - Use of recursion: Stack, Tree, Sorting(Quick sort, merge sort).
