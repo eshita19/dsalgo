@@ -19,3 +19,4 @@
 ## Algo Runtime analysis:
    - Omega notation - minimum time taken by algo(Best case)
    - Big o notation - maximum time taken by algo(Worst case)
+   - Theta notation - Average case
