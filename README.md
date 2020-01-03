@@ -12,4 +12,5 @@
       }
       
       ```
-   - Method calls are stored in memory stack(LIFO - last in first out) manner.   
+   - Method calls are stored in memory stack(LIFO - last in first out) manner. 
+   - Pros: Ease of code, Cons: Not space and time efficient.
