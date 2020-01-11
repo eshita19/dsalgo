@@ -47,6 +47,7 @@
    - Linear datastructure.
    - Each element contains its own value and a link to the next element.
    - Variable in size.
+   - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%203.40.44%20PM.png">
    
    
   
