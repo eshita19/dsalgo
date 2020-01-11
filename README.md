@@ -30,8 +30,9 @@
       - O(2n) - Exponential - Tower of hanoi
   
 ## Arrays:
-   - Stored in contigious memory location.
-   - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%202.52.38%20PM.png">
+   - **1D Array** : 
+      - Stored in contigious memory location.
+      - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%202.52.38%20PM.png">
    
   
       
