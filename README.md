@@ -31,14 +31,6 @@
   
 ## Arrays:
    - Stored in contigious memory location.
-   - Time Complexity of inserting elements in array: O(1)
-      ```
-       Insert(arr, index, val):
-       if arr[index] already occupied
-            return error
-       else arr[index] = val  
-     ``` 
-  -  Traversing a given 1D array: O(n)
-  - Access a given cell: 
+   
   
       
