@@ -30,7 +30,23 @@
       - O(2n) - Exponential - Tower of hanoi
   
 ## Arrays:
-   - Stored in contigious memory location.
+   - **1D Array** : 
+      - Stored in contigious memory location.
+        <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%202.52.38%20PM.png">
+        
+   - **2D Array**:
+     - Ex:  a[row][col]
+     ``` 
+        int a[][]= [{1,2,3},  // Row1   
+                   {4,5,6},   //Row2
+                   {7,8,9}]   //Row3
+         ```          
+         
+## Linked List: 
+   - Linear datastructure.
+   - Each element contains its own value and a link to the next element.
+   - Variable in size.
+   
    
   
       
