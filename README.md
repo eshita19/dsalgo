@@ -41,6 +41,12 @@
                    {4,5,6},   //Row2
                    {7,8,9}]   //Row3
          ```          
+         
+## Linked List: 
+   - Linear datastructure.
+   - Each element contains its own value and a link to the next element.
+   - Variable in size.
+   
    
   
       
