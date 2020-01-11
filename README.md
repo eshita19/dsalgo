@@ -35,6 +35,7 @@
         <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%202.52.38%20PM.png">
         
    - **2D Array**:
+     - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/array/TwoDArray.java
      - Ex:  a[row][col]
      ``` 
         int a[][]= [{1,2,3},  // Row1   
