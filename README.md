@@ -28,4 +28,17 @@
       - O(n2) - Quadratic - Shortest path between two nodes.
       - O(n3) - Cubic - Matrix multiplication
       - O(2n) - Exponential - Tower of hanoi
+  
+## Arrays:
+   - Stored in contigious memory location.
+   - Time Complexity of inserting elements in array: O(1)
+      ```
+       Insert(arr, index, val):
+       if arr[index] already occupied
+            return error
+       else arr[index] = val  
+     ``` 
+  -  Traversing a given 1D array: O(n)
+  - Access a given cell: 
+  
       
