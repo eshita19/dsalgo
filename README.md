@@ -46,7 +46,14 @@
 ## Linked List: 
    - Linear datastructure.
    - Each element contains its own value and a link to the next element.
-   - Variable in size.
+   - Variable in size(linked list), Random access(Array), Element separate objects(linked list).
+   - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%203.40.44%20PM.png">
+   - Types of linked list:
+     - Singly linked list
+     - Circular Single linked list
+     - Doubly linked list
+     - Circular Double linked list
+     - 
    
    
   
