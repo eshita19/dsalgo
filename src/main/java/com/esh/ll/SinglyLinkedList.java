@@ -9,10 +9,10 @@ class SNode {
 	}
 }
 
-public class SinglyLinkedList {
+public class SinglyLinkedList implements LinkedList {
 	static SNode head = null;
 
-	public static void insertEnd(int elem) {
+	public void insertEnd(int elem) {
 		if (null == head) { // Empty list
 			head = new SNode(elem);
 		} else {
@@ -24,13 +24,13 @@ public class SinglyLinkedList {
 		}
 	}
 
-	public static void insertStart(int elem) {
+	public void insertStart(int elem) {
 		SNode node = new SNode(elem);
 		node.next = head;
 		head = node;
 	}
 
-	public static void insertAt(int elem, int index) {
+	public void insertAt(int elem, int index) {
 		SNode node = new SNode(elem);
 		SNode temp = head;
 		if (null == head && index != 0) { // Empty linked list & new elem index
@@ -51,14 +51,14 @@ public class SinglyLinkedList {
 		}
 	}
 
-	public static void deleteFirst() {
+	public  void deleteFirst() {
 		if(null == head){
 			throw new IllegalStateException("Linked list empty, how can we delete element?!");
 		}
 		head = head.next;
 	}
 
-	public static void deleteLast() {
+	public  void deleteLast() {
 		if(null == head){
 			throw new IllegalStateException("Linked list empty, how can we delete element?!");
 		}
@@ -71,7 +71,7 @@ public class SinglyLinkedList {
 		prev.next = null;
 	}
 
-	public static void deleteAtIndex(int index) {
+	public  void deleteAtIndex(int index) {
 		if(null == head){
 			throw new IllegalStateException("Linked list empty, how can we delete element?!");
 		}
@@ -93,11 +93,11 @@ public class SinglyLinkedList {
 
 	}
 	
-	public static void deleteEntireLL(){
+	public  void deleteEntireLL(){
 		head = null;
 	}
 
-	public static boolean isElementPresent(int element) {
+	public  boolean isElementPresent(int element) {
 		boolean isElementPresent = false;
 		if (head != null) {
 			SNode temp = head;
@@ -112,7 +112,7 @@ public class SinglyLinkedList {
 		return isElementPresent;
 	}
 
-	public static void display() {
+	public  void display() {
 		if (null == head) {
 			System.out.println("No elements present");
 		} else {
@@ -127,13 +127,14 @@ public class SinglyLinkedList {
 
 	public static void main(String[] args) {
 		// Add element to linked list
-		System.out.println("Element 4 present? : " + isElementPresent(4));
-		insertStart(-2);
-		insertEnd(1);
-		insertEnd(2);
-		deleteAtIndex(1);
-		display();
-		deleteLast();
-		display();
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		System.out.println("Element 4 present? : " + linkedList.isElementPresent(4));
+		linkedList.insertStart(-2);
+		linkedList.insertEnd(1);
+		linkedList.insertEnd(2);
+		linkedList.deleteAtIndex(1);
+		linkedList.display();
+		linkedList.deleteLast();
+		linkedList.display();
 	}
 }
