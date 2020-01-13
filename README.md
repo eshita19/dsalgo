@@ -53,7 +53,17 @@
      - Circular Single linked list
      - Doubly linked list
      - Circular Double linked list
-     - 
+
+## Stack
+  - Last in first out.
+  - insertFirst(), deleteFirst()
+## Queue
+   - First in first out.
+   - insertEnd(), deleteFirst()
+  
+     
+     
+     
    
    
   
