@@ -60,6 +60,10 @@
 ## Queue
    - First in first out.
    - insertEnd(), deleteFirst()
+   - **Circular Queue using array**:
+     - We resuse the deleted element space.
+     - Maintain two pointers front - pointing to the first element, rear - pointing to the last element.
+     - front = (front + 1) % size.
   
      
      
