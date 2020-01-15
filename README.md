@@ -65,7 +65,21 @@
      - Maintain two pointers front - pointing to the first element, rear - pointing to the last element.
      - front = (front + 1) % size.
   
-     
+## Tree
+   - Used to represent data in hierarchical form.
+   - Every node has two compoenent, its data and reference to child nodes.
+   - Terminologies:
+      - Root: Node with no parent.
+      - Edge: Link from parent to child.
+      - Leaf: Node with no children.
+      - Sibling: Children of same parent.
+      - Ancestor: parent, grand parent, great grand parent etc.
+      - Depth of node: Length of the path from root to node.
+      - Height of node: Length of the path from node to the deepest node.
+      - Height of tree: Same ass height of root node.
+      - Depth of tree: Same as depth of root node, i.e 0.
+      
+
      
      
    
