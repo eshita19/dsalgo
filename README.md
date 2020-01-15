@@ -90,7 +90,8 @@
           - InOrder trversal - Left subtree, root, Right subtree.
           - PostOrder traversal - Left subtree, right subtree, root
        - Breadth First search:
-         - Level order traversal
+         - Level order traversal - Traverse from level 0 to last last level from left to right.
+         
          
       
 
