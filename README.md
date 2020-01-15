@@ -123,6 +123,15 @@
          }
          
          ```
+     - Deletion of node in Binary tree: O(n)
+       ```
+       deleteNode(int elem):
+         Search for node to be deleted.
+         find deepest node in the tree, by using level order traversal.
+         Copy deepest node data to node to be deleted. 
+         delete deepest node.
+       ```
+      
         
            
          
