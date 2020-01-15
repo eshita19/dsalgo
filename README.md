@@ -78,6 +78,8 @@
       - Height of node: Length of the path from node to the deepest node.
       - Height of tree: Same ass height of root node.
       - Depth of tree: Same as depth of root node, i.e 0.
+      - Predecessor:Previous node in Inorder traversal(Left sibiling, node, right sibling)
+      - Sucessor: Next node in Inorder traversal.
       
 
      
