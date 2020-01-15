@@ -53,7 +53,93 @@
      - Circular Single linked list
      - Doubly linked list
      - Circular Double linked list
-     - 
+
+## Stack
+  - Last in first out.
+  - insertFirst(), deleteFirst()
+## Queue
+   - First in first out.
+   - insertEnd(), deleteFirst()
+   - **Circular Queue using array**:
+     - We resuse the deleted element space.
+     - Maintain two pointers front - pointing to the first element, rear - pointing to the last element.
+     - front = (front + 1) % size.
+  
+## Tree
+   - Used to represent data in hierarchical form.
+   - Every node has two compoenent, its data and reference to child nodes.
+   - Terminologies:
+      - Root: Node with no parent.
+      - Edge: Link from parent to child.
+      - Leaf: Node with no children.
+      - Sibling: Children of same parent.
+      - Ancestor: parent, grand parent, great grand parent etc.
+      - Depth of node: Length of the path from root to node.
+      - Height of node: Length of the path from node to the deepest node.
+      - Height of tree: Same ass height of root node.
+      - Depth of tree: Same as depth of root node, i.e 0.
+      - Predecessor:Previous node in Inorder traversal(Left sibiling, node, right sibling)
+      - Sucessor: Next node in Inorder traversal.
+   - **Binary Tree**: A tree is called binary tree if it has zero, one or two child.(At the most 2).
+      - Strict Binary tree: If each node has either zero or two children.
+      - Full Binary tree: Non leaf node has 2 children and all Leaf nodes are on same level.
+      - Complete Binary tree: If all levels are completely filled except possibly the last level and the last level has all key as left as possible.
+      - Search in Binary tree:
+        - Depth First Search: O(n)
+          - PreOrder traversal - Root, Left subtree, Right subtree.
+            ```
+            PreOrder(Node root):
+            if(root ==null){
+               return;
+            }
+            Print root
+            PreOrder(root.left)
+            PreOrder(root.right)
+            ```
+          - InOrder trversal - Left subtree, root, Right subtree.
+          - PostOrder traversal - Left subtree, right subtree, root
+       - Breadth First search: O(n)
+         - Level order traversal - Traverse from level 0 to last last level from left to right.
+           ```
+           LevelOrderTraversal(root):
+           if(root ==null){
+              return;
+           }
+           Create queue
+           enqueue(root)
+           while(front.elem != null){
+               enqueue front elem's childs
+               dequeue front element and print
+           }       
+           ```
+      - Insertion of node in Binary Tree: O(n)
+         ```
+         insertNode(Node root):
+         if(root == null){
+            //Insert
+         }else{
+            //do level order traversal to find first empty space.
+            //Insert element.
+         }
+         
+         ```
+     - Deletion of node in Binary tree: O(n)
+       ```
+       deleteNode(int elem):
+         Search for node to be deleted.
+         find deepest node in the tree, by using level order traversal.
+         Copy deepest node data to node to be deleted. 
+         delete deepest node.
+       ```
+      
+        
+           
+         
+         
+      
+
+     
+     
    
    
   
