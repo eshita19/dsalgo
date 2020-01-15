@@ -85,7 +85,7 @@
       - Full Binary tree: Non leaf node has 2 children and all Leaf nodes are on same level.
       - Complete Binary tree: If all levels are completely filled except possibly the last level and the last level has all key as left as possible.
       - Search in Binary tree:
-        - Depth First Search:
+        - Depth First Search: O(n)
           - PreOrder traversal - Root, Left subtree, Right subtree.
             ```
             PreOrder(Node root):
@@ -98,7 +98,7 @@
             ```
           - InOrder trversal - Left subtree, root, Right subtree.
           - PostOrder traversal - Left subtree, right subtree, root
-       - Breadth First search:
+       - Breadth First search: O(n)
          - Level order traversal - Traverse from level 0 to last last level from left to right.
            ```
            LevelOrderTraversal(root):
@@ -112,6 +112,19 @@
                dequeue front element and print
            }       
            ```
+      - Insertion of node in Binary Tree: O(n)
+         ```
+         insertNode(Node root):
+         if(root == null){
+            //Insert
+         }else{
+            //do level order traversal to find first empty space.
+            //Insert element.
+         }
+         
+         ```
+        
+           
          
          
       
