@@ -80,6 +80,18 @@
       - Depth of tree: Same as depth of root node, i.e 0.
       - Predecessor:Previous node in Inorder traversal(Left sibiling, node, right sibling)
       - Sucessor: Next node in Inorder traversal.
+   - **Binary Tree**: A tree is called binary tree if it has zero, one or two child.(At the most 2).
+      - Strict Binary tree: If each node has either zero or two children.
+      - Full Binary tree: Non leaf node has 2 children and all Leaf nodes are on same level.
+      - Complete Binary tree: If all levels are completely filled except possibly the last level and the last level has all key as left as possible.
+      - Search in Binary tree:
+        - Depth First Search:
+          - PreOrder traversal - Root, Left subtree, Right subtree.
+          - InOrder trversal - Left subtree, root, Right subtree.
+          - PostOrder traversal - Left subtree, right subtree, root
+       - Breadth First search:
+         - Level order traversal
+         
       
 
      
