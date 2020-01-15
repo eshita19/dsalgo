@@ -87,10 +87,31 @@
       - Search in Binary tree:
         - Depth First Search:
           - PreOrder traversal - Root, Left subtree, Right subtree.
+            ```
+            PreOrder(Node root):
+            if(root ==null){
+               return;
+            }
+            Print root
+            PreOrder(root.left)
+            PreOrder(root.right)
+            ```
           - InOrder trversal - Left subtree, root, Right subtree.
           - PostOrder traversal - Left subtree, right subtree, root
        - Breadth First search:
          - Level order traversal - Traverse from level 0 to last last level from left to right.
+           ```
+           LevelOrderTraversal(root):
+           if(root ==null){
+              return;
+           }
+           Create queue
+           enqueue(root)
+           while(front.elem != null){
+               enqueue front elem's childs
+               dequeue front element and print
+           }       
+           ```
          
          
       
