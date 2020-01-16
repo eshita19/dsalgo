@@ -48,6 +48,7 @@
    - Each element contains its own value and a link to the next element.
    - Variable in size(linked list), Random access(Array), Element separate objects(linked list).
    - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%203.40.44%20PM.png">
+   -  https://github.com/eshita19/dsalgo/tree/master/src/main/java/com/esh/ll
    - Types of linked list:
      - Singly linked list
      - Circular Single linked list
@@ -60,10 +61,12 @@
 ## Queue
    - First in first out.
    - insertEnd(), deleteFirst()
+   - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/ll/Queue.java
    - **Circular Queue using array**:
      - We resuse the deleted element space.
      - Maintain two pointers front - pointing to the first element, rear - pointing to the last element.
      - front = (front + 1) % size.
+     - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/cq/CircularQueue.java
   
 ## Tree
    - Used to represent data in hierarchical form.
@@ -81,6 +84,7 @@
       - Predecessor:Previous node in Inorder traversal(Left sibiling, node, right sibling)
       - Sucessor: Next node in Inorder traversal.
    - **Binary Tree**: A tree is called binary tree if it has zero, one or two child.(At the most 2).
+      - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/tree/BinaryTree.java
       - Strict Binary tree: If each node has either zero or two children.
       - Full Binary tree: Non leaf node has 2 children and all Leaf nodes are on same level.
       - Complete Binary tree: If all levels are completely filled except possibly the last level and the last level has all key as left as possible.
@@ -131,6 +135,39 @@
          Copy deepest node data to node to be deleted. 
          delete deepest node.
        ```
+  - **Binary search treee** : Binary tree wherin each node's left subtree element are lesser than node element. Each node's right subtree element are greater than node element.
+    - Insertion - O(logn)
+      ```
+        insertNode(int elem):
+          if(null ==root):
+            root = Node(elem)
+          else
+            find parent node
+            if(elem < elem parent node){
+               parent.left = Node(elem)
+            }else{
+               parent.right = Node(elem)
+            }
+            
+        findParentNode(Node root, int elem){
+            if(elem < root and root.left != null){
+               return findParentNode(root.left, elem)
+            }
+            if(elem > root and root.right != null){
+               return findParentNode(root.right, elem)
+            }
+            return root;
+        }
+       ```
+   - Search - O(logn)  
+   - Traversal - Same as binary tree
+   - Deletion of node: 
+     - Case 1: Node to be deleted is leaf node => Delete the node.
+     - Case 2: Node to be deleted is not leaf node and has one child => Copy the child's value in the node and delete child.
+     - Case 3: Node to be deleted has 2 children => Copy the Inorder successor's(Left most node in right subtree) value in the node and delete successor node.
+             
+            
+  
       
         
            
