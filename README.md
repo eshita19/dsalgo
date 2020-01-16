@@ -48,6 +48,7 @@
    - Each element contains its own value and a link to the next element.
    - Variable in size(linked list), Random access(Array), Element separate objects(linked list).
    - <img src="https://github.com/eshita19/dsalgo/blob/master/src/main/resources/Screenshot%202020-01-11%20at%203.40.44%20PM.png">
+   -  https://github.com/eshita19/dsalgo/tree/master/src/main/java/com/esh/ll
    - Types of linked list:
      - Singly linked list
      - Circular Single linked list
@@ -60,10 +61,12 @@
 ## Queue
    - First in first out.
    - insertEnd(), deleteFirst()
+   - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/ll/Queue.java
    - **Circular Queue using array**:
      - We resuse the deleted element space.
      - Maintain two pointers front - pointing to the first element, rear - pointing to the last element.
      - front = (front + 1) % size.
+     - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/cq/CircularQueue.java
   
 ## Tree
    - Used to represent data in hierarchical form.
@@ -81,6 +84,7 @@
       - Predecessor:Previous node in Inorder traversal(Left sibiling, node, right sibling)
       - Sucessor: Next node in Inorder traversal.
    - **Binary Tree**: A tree is called binary tree if it has zero, one or two child.(At the most 2).
+      - https://github.com/eshita19/dsalgo/blob/master/src/main/java/com/esh/tree/BinaryTree.java
       - Strict Binary tree: If each node has either zero or two children.
       - Full Binary tree: Non leaf node has 2 children and all Leaf nodes are on same level.
       - Complete Binary tree: If all levels are completely filled except possibly the last level and the last level has all key as left as possible.
