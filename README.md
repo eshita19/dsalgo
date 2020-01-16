@@ -164,7 +164,7 @@
    - Deletion of node: 
      - Case 1: Node to be deleted is leaf node => Delete the node.
      - Case 2: Node to be deleted is not leaf node and has one child => Copy the child's value in the node and delete child.
-     - Case 3: Node to be deleted has 2 children => Copy the Inorder successor's value in the node and delete successor node.
+     - Case 3: Node to be deleted has 2 children => Copy the Inorder successor's(Left most node in right subtree) value in the node and delete successor node.
              
             
   
