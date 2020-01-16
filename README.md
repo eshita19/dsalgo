@@ -136,6 +136,34 @@
          delete deepest node.
        ```
   - **Binary search treee** : Binary tree wherin each node's left subtree element are lesser than node element. Each node's right subtree element are greater than node element.
+    - Insertion - O(logn)
+      ```
+        insertNode(int elem):
+          if(null ==root):
+            root = Node(elem)
+          else
+            find parent node
+            if(elem < elem parent node){
+               parent.left = Node(elem)
+            }else{
+               parent.right = Node(elem)
+            }
+            
+        findParentNode(Node root, int elem){
+            if(elem < root and root.left != null){
+               return findParentNode(root.left, elem)
+            }
+            if(elem > root and root.right != null){
+               return findParentNode(root.right, elem)
+            }
+            return root;
+        }
+       ```
+   - Search - O(logn)  
+   - Traversal - Same as binary tree
+   - Deletion of node
+             
+            
   
       
         
