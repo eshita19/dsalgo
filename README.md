@@ -131,6 +131,8 @@
          Copy deepest node data to node to be deleted. 
          delete deepest node.
        ```
+  - **Binary search treee** : Binary tree wherin each node's left subtree element are lesser than node element. Each node's right subtree element are greater than node element.
+  
       
         
            
