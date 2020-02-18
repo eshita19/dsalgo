@@ -166,7 +166,20 @@
      - Case 2: Node to be deleted is not leaf node and has one child => Copy the child's value in the node and delete child.
      - Case 3: Node to be deleted has 2 children => Copy the Inorder successor's(Left most node in right subtree) value in the node and delete successor node.
              
-            
+- **Trie**: 
+  1. Trie is a tree structure which can be used for faster search of keys.
+  2. Structure:
+     ``` class TrieNode{
+            Node node;
+            Node[ALPHABET_SIZE]children;
+            boolean isEndOfWord;
+         }
+     ```
+  3. Each character of the key is stored as a node. Each node has multiple nodes as children. Children are indexed based on their ascii value. children[0] = 'a', children[1] = 'b'.
+  4. Pros: The search operation takes O(k) time, k is length of the key.
+  6. Cons: Since each node has to maintain fixed size array( 26 - no of alphabets), the memory requirement is huge.
+  7. Code link: 
+  8.
   
       
         
