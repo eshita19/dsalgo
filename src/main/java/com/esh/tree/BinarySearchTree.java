@@ -88,16 +88,14 @@ public class BinarySearchTree extends BinaryTree {
 		tree.insertNode(2);
 		tree.insertNode(8);
 		tree.insertNode(1);
-		tree.insertNode(3);
 		tree.insertNode(4);
+		tree.insertNode(3);
 		tree.insertNode(6);
 		tree.insertNode(5);
 		tree.inOrderTraversal(tree.root);
 		System.out.println("\nSearch 4: " + (tree.searchNode(tree.root, 4) != null));
 		System.out.println("\nSearch 0: " + (tree.searchNode(tree.root, 0) != null));
-		tree.deleteNode(3);
 		tree.deleteNode(4);
-		tree.deleteNode(8);
 		tree.inOrderTraversal(tree.root);
 	}
 }
